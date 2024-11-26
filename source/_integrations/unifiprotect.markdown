@@ -272,7 +272,7 @@ Three URLs for proxy API endpoints:
 
 `/api/unifiprotect/video/{nvr_id}/{event_id}`:
 
-- Proxies a MP4 video clip from UniFi Protect for a specific event. 
+- Proxies a MP4 video clip from UniFi Protect for a specific event. To get the video, the event needs to be finished. If it's still ongoing, use the camera endpoint defined above.
 
 `nvr_id` can either be the UniFi Protect ID of your NVR or the config entry ID for your UniFi Protect {% term integrations %}. `camera_id` can either be the UniFi Protect ID of your camera or an entity ID of any {% term entity %} provided by the UniFi Protect {% term integrations %} that can be reversed to a UniFi Protect camera (i.e., an entity ID of a detected object sensor).
 
