@@ -262,15 +262,15 @@ These URLs work great when trying to send notifications. Home Assistant will aut
 
 Three URLs for proxy API endpoints:
 
-`/api/unifiprotect/thumbnail/{nvr_id}/{event_id}:`
+`/api/unifiprotect/thumbnail/{nvr_id}/{event_id}`
 
 - Proxies a JPEG event thumbnail from UniFi Protect.
 
-`/api/unifiprotect/video/{nvr_id}/{camera_id}/{start}/{end}`:
+`/api/unifiprotect/video/{nvr_id}/{camera_id}/{start}/{end}`
 
 - Proxies a MP4 video clip from UniFi Protect for a specific camera. Start and end must be in [ISO 8601 format](https://www.iso.org/iso-8601-date-and-time-format.html).
 
-`/api/unifiprotect/video/{nvr_id}/{event_id}`:
+`/api/unifiprotect/video/{nvr_id}/{event_id}`
 
 - Proxies a MP4 video clip from UniFi Protect for a specific event. To get the video, the event needs to be finished. If it's still ongoing, use the camera endpoint defined above.
 
